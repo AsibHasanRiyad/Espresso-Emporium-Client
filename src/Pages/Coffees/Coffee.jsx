@@ -57,9 +57,11 @@ const Coffee = ({ coffee }) => {
         </div>
         <div>
           <div className=" flex flex-col gap-3 w-10">
+            <Link to={`/details/${_id}`}>
             <button className="bg-[#D2B48C] p-3 flex rounded-full lg:rounded text-white justify-center items-center ">
               <FaEye></FaEye>
             </button>
+            </Link>
             <Link to={`/updateCoffee/${_id}`}>
               <button className="bg-gray-700 p-3 flex rounded-full lg:rounded text-white justify-center items-center ">
                 <FaEdit></FaEdit>
